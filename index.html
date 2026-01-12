@@ -1,45 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Startup Landing Page</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <title>Professional Colorful Landing Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f6fb;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 50px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar h2 {
+            color: #6366f1;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-btn {
+            background: linear-gradient(90deg,#4f46e5,#06b6d4);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+        }
+
+        /* Hero */
+        .hero {
+            height: 85vh;
+            background: linear-gradient(120deg,#6366f1,#ec4899);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero span {
+            color: #facc15;
+        }
+
+        .btn-main {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: white;
+            color: #6366f1;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* About */
+        .about {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        .skill-card {
+            margin: 15px;
+            padding: 30px;
+            width: 150px;
+            text-align: center;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .blue { background:#3b82f6; }
+        .pink { background:#ec4899; }
+        .green { background:#22c55e; }
+        .purple { background:#8b5cf6; }
+
+        /* Projects */
+        .projects {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .project-grid {
+            display: flex;
+            justify-content: center;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            margin: 15px;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background:#111827;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="hero">
-    <h1>Build Your Future</h1>
-    <p>Turn your ideas into reality with modern technology</p>
-    <a href="#" class="btn">Get Started</a>
+<!-- Navbar -->
+<div class="navbar">
+    <h2>MyProfile</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a class="nav-btn" href="#">Contact</a>
+    </div>
 </div>
 
-<section>
-    <h2>About Us</h2>
-    <p>
-        We help individuals and teams transform ideas into working products by
-        providing technical guidance and development support.
-    </p>
-</section>
+<!-- Hero -->
+<div class="hero">
+    <div>
+        <h1>Hello, I'm <span>Developer</span></h1>
+        <p>I build colorful, modern and powerful digital experiences.</p>
+        <a href="#" class="btn-main">View My Work</a>
+    </div>
+</div>
 
-<section>
-    <h2>Our Services</h2>
-    <ul>
-        <li>Idea Validation</li>
-        <li>Product Development</li>
-        <li>Technical Support</li>
-        <li>Growth Strategy</li>
-    </ul>
-</section>
+<!-- About -->
+<div class="about">
+    <h2>About Me</h2>
+    <p>I am passionate about building web applications using Python, HTML, CSS and modern tools.</p>
+</div>
 
-<section>
-    <h2>Why Choose Us</h2>
-    <p>
-        We focus on hands-on execution, helping you move from concept to launch with
-        reliable and scalable solutions.
-    </p>
-</section>
+<!-- Skills -->
+<div class="skills">
+    <div class="skill-card blue">Python</div>
+    <div class="skill-card pink">HTML</div>
+    <div class="skill-card green">CSS</div>
+    <div class="skill-card purple">Flask</div>
+</div>
+
+<!-- Projects -->
+<div class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <div class="project">Web App</div>
+        <div class="project">Landing Page</div>
+        <div class="project">Database App</div>
+    </div>
+</div>
 
 <footer>
-    <p>© 2026 All Rights Reserved</p>
+    <p>© 2026 My Portfolio</p>
 </footer>
 
 </body>
