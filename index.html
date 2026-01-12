@@ -1,178 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Professional Colorful Landing Page</title>
+<title>Axibator – Where Founders Find Direction</title>
+<style>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #f4f6fb;
-        }
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f7fb;
+    color:#1f2937;
+}
 
-        /* Navbar */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 50px;
-            background: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+/* NAVBAR */
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+.nav h2{color:#4f46e5;}
+.nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#333;
+}
+.nav .cta{
+    background:linear-gradient(90deg,#4f46e5,#06b6d4);
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+}
 
-        .navbar h2 {
-            color: #6366f1;
-        }
+/* HERO */
+.hero{
+    height:95vh;
+    background:linear-gradient(135deg,#4f46e5,#ec4899);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+}
+.hero h1{font-size:52px;}
+.hero span{color:#facc15;}
+.hero p{
+    max-width:800px;
+    margin:auto;
+    margin-top:20px;
+    font-size:18px;
+}
+.hero .btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 45px;
+    background:white;
+    color:#4f46e5;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        .navbar a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
+/* SECTIONS */
+.section{
+    padding:90px 60px;
+    text-align:center;
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.card{
+    background:white;
+    width:320px;
+    margin:20px;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    text-align:left;
+}
+.card h3{color:#4f46e5;}
 
-        .nav-btn {
-            background: linear-gradient(90deg,#4f46e5,#06b6d4);
-            color: white;
-            padding: 8px 18px;
-            border-radius: 20px;
-        }
+.program{
+    background:linear-gradient(135deg,#6366f1,#06b6d4);
+    color:white;
+    padding:40px;
+    border-radius:25px;
+    margin:20px;
+    width:330px;
+}
 
-        /* Hero */
-        .hero {
-            height: 85vh;
-            background: linear-gradient(120deg,#6366f1,#ec4899);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
+.badge{
+    display:inline-block;
+    background:#facc15;
+    padding:6px 15px;
+    border-radius:20px;
+    font-weight:bold;
+    color:#111;
+}
 
-        .hero h1 {
-            font-size: 50px;
-        }
+/* FOOTER */
+footer{
+    background:#111827;
+    color:white;
+    padding:40px;
+    text-align:center;
+}
 
-        .hero span {
-            color: #facc15;
-        }
-
-        .btn-main {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 30px;
-            background: white;
-            color: #6366f1;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* About */
-        .about {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        /* Skills */
-        .skills {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 60px;
-        }
-
-        .skill-card {
-            margin: 15px;
-            padding: 30px;
-            width: 150px;
-            text-align: center;
-            border-radius: 15px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .blue { background:#3b82f6; }
-        .pink { background:#ec4899; }
-        .green { background:#22c55e; }
-        .purple { background:#8b5cf6; }
-
-        /* Projects */
-        .projects {
-            text-align: center;
-            padding: 50px;
-        }
-
-        .project-grid {
-            display: flex;
-            justify-content: center;
-        }
-
-        .project {
-            background: white;
-            padding: 30px;
-            margin: 15px;
-            width: 200px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        /* Footer */
-        footer {
-            background:#111827;
-            color:white;
-            text-align:center;
-            padding:15px;
-        }
-    </style>
+</style>
 </head>
 
 <body>
 
-<!-- Navbar -->
-<div class="navbar">
-    <h2>MyProfile</h2>
+<!-- NAV -->
+<div class="nav">
+    <h2>Axibator</h2>
     <div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a class="nav-btn" href="#">Contact</a>
+        <a href="#">Programs</a>
+        <a href="#">Builder Nests</a>
+        <a href="#">Partners</a>
+        <a class="cta" href="#">Apply Now</a>
     </div>
 </div>
 
-<!-- Hero -->
+<!-- HERO -->
 <div class="hero">
-    <div>
-        <h1>Hello, I'm <span>Developer</span></h1>
-        <p>I build colorful, modern and powerful digital experiences.</p>
-        <a href="#" class="btn-main">View My Work</a>
-    </div>
+<div>
+<h1>Axibator – Where Founders Find <span>Direction</span><br>and the Grit to Build Bold</h1>
+<p>Axibator is more than a program — it’s a launchpad for grassroots and student founders. We help first-time founders from small towns, campuses and communities with clarity, systems and support to start building from day one.</p>
+<a class="btn" href="#">Start Building</a>
+</div>
 </div>
 
-<!-- About -->
-<div class="about">
-    <h2>About Me</h2>
-    <p>I am passionate about building web applications using Python, HTML, CSS and modern tools.</p>
+<!-- WHAT IS -->
+<div class="section">
+<h2>What is Axibator?</h2>
+<p><b>Axibator = Axis (Direction) + Incubator (Nurture)</b></p>
+<p>An execution-first launchpad helping India’s next generation of founders with squads, not hierarchy.</p>
 </div>
 
-<!-- Skills -->
-<div class="skills">
-    <div class="skill-card blue">Python</div>
-    <div class="skill-card pink">HTML</div>
-    <div class="skill-card green">CSS</div>
-    <div class="skill-card purple">Flask</div>
+<!-- CORE PROGRAMS -->
+<div class="section">
+<h2>⚡ Core Programs</h2>
+<div class="cards">
+
+<div class="program">
+<h3>Ignite Cohort – 4 Weeks</h3>
+<p>Turn raw ideas into tested prototypes for students & first-time founders.</p>
+<ul>
+<li>Idea validation sprints</li>
+<li>Rapid prototyping</li>
+<li>Customer interviews</li>
+<li>MVP wireframing</li>
+</ul>
 </div>
 
-<!-- Projects -->
-<div class="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-        <div class="project">Web App</div>
-        <div class="project">Landing Page</div>
-        <div class="project">Database App</div>
-    </div>
+<div class="program">
+<h3>Core Incubation – 12 Weeks</h3>
+<p>Go from MVP → first users → public launch.</p>
+<ul>
+<li>Weekly mentor jams</li>
+<li>User acquisition strategy</li>
+<li>Real-time feedback loops</li>
+</ul>
+</div>
+
+<div class="program">
+<h3>Village Innovation Labs</h3>
+<p>Build solutions for real Bharat.</p>
+<ul>
+<li>Rural immersion</li>
+<li>Local partnerships</li>
+<li>Grassroots innovation</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+<h2>📚 Skill Development Tracks</h2>
+<div class="cards">
+<div class="card">
+<ul>
+<li>Design & User Experience</li>
+<li>Go-to-Market Strategy</li>
+<li>No-Code Development</li>
+<li>Storytelling & Pitching</li>
+<li>User Research</li>
+<li>Fundraising Basics</li>
+</ul>
+</div>
+<div class="card">
+<h3>Founder Apprenticeship Sprint</h3>
+<ul>
+<li>Startup task execution</li>
+<li>Team collaboration</li>
+<li>Hands-on learning — no theory</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- BUILDER NEST -->
+<div class="section">
+<h2>🏠 Builder Nest</h2>
+<p>A founder-first home to build bold things — whiteboards, chai, hackathons, demos, shipping streaks, potlucks & podcasts.</p>
+<p><b>Residency Options:</b> Free Pass, Builder-in-Residence, Premium Resident, Rural-Urban Exchange, Nest MicroFund.</p>
+<p><b>Locations 2025:</b> Amaravati, Vizag, Warangal (upcoming), Vijayawada. Interest: Tirupati, Karimnagar, Nellore.</p>
+</div>
+
+<!-- PARTNERS -->
+<div class="section">
+<h2>Our Partners (50+)</h2>
+<p>HubSpot, Atlassian, Apollo, Asana, Intercom, Zendesk, Zoho, Notion, Webflow, GitHub, Miro, Databricks, Retool, Framer, Mixpanel, Posthog, ClickUp, OVHCloud, and more.</p>
+<p><b>Funding Partners:</b> Wolf Ventures + VC & Angel network</p>
+</div>
+
+<!-- ECOSYSTEM -->
+<div class="section">
+<h2>Building the Ecosystem</h2>
+<p>Partnering with Incubators, VCs, Mentors, Startup Founders, Corporates & Government bodies.</p>
 </div>
 
 <footer>
-    <p>© 2026 My Portfolio</p>
+<p>© 2026 Axibator. Built for Founders.</p>
 </footer>
 
 </body>
