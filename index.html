@@ -1,115 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Axibator – Where Founders Find Direction</title>
-<style>
 
+<style>
+*{box-sizing:border-box;}
 body{
     margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:#f4f7fb;
-    color:#1f2937;
+    font-family:Inter,Segoe UI,Arial;
+    background:#f4fdfb;
+    color:#0f172a;
 }
 
-/* NAVBAR */
+/* NAV */
 .nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
+    padding:20px 70px;
     background:white;
-    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    box-shadow:0 10px 40px rgba(0,0,0,0.06);
+    position:sticky;
+    top:0;
+    z-index:10;
 }
-.nav h2{color:#4f46e5;}
+.nav h2{
+    color:#0f766e;
+    font-weight:900;
+}
 .nav a{
-    margin:0 15px;
+    color:#334155;
     text-decoration:none;
-    color:#333;
+    margin:0 18px;
+    font-weight:500;
 }
 .nav .cta{
-    background:linear-gradient(90deg,#4f46e5,#06b6d4);
+    background:linear-gradient(90deg,#14b8a6,#0f766e);
+    padding:12px 26px;
+    border-radius:30px;
     color:white;
-    padding:10px 20px;
-    border-radius:25px;
+    font-weight:bold;
 }
 
 /* HERO */
 .hero{
-    height:95vh;
-    background:linear-gradient(135deg,#4f46e5,#ec4899);
+    min-height:95vh;
+    background:radial-gradient(circle at top,#1fffd1,#0f766e 40%,#022c22 75%);
     color:white;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:40px;
+    padding:100px 40px;
 }
-.hero h1{font-size:52px;}
+.hero h1{
+    font-size:64px;
+    font-weight:900;
+}
 .hero span{color:#facc15;}
 .hero p{
-    max-width:800px;
-    margin:auto;
-    margin-top:20px;
-    font-size:18px;
+    max-width:850px;
+    margin:25px auto;
+    font-size:22px;
+    color:#d1fae5;
 }
 .hero .btn{
-    display:inline-block;
-    margin-top:35px;
-    padding:15px 45px;
-    background:white;
-    color:#4f46e5;
-    border-radius:30px;
-    text-decoration:none;
+    padding:18px 52px;
+    border-radius:50px;
+    background:linear-gradient(90deg,#facc15,#22c55e);
+    color:#064e3b;
     font-weight:bold;
+    text-decoration:none;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section{
-    padding:90px 60px;
-    text-align:center;
+    padding:110px 80px;
+    max-width:1200px;
+    margin:auto;
 }
-.cards{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+.section h2{
+    font-size:42px;
+    margin-bottom:25px;
+    color:#0f766e;
+    font-weight:900;
 }
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+/* CARD */
 .card{
     background:white;
-    width:320px;
-    margin:20px;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.08);
-    text-align:left;
-}
-.card h3{color:#4f46e5;}
-
-.program{
-    background:linear-gradient(135deg,#6366f1,#06b6d4);
-    color:white;
-    padding:40px;
     border-radius:25px;
-    margin:20px;
-    width:330px;
+    padding:40px;
+    box-shadow:0 30px 70px rgba(0,0,0,0.1);
 }
 
+/* BADGE */
 .badge{
     display:inline-block;
-    background:#facc15;
-    padding:6px 15px;
+    background:#ccfbf1;
+    color:#064e3b;
+    padding:6px 18px;
     border-radius:20px;
     font-weight:bold;
-    color:#111;
+}
+
+/* LIST */
+ul{padding-left:20px;}
+li{margin:10px 0;}
+
+/* BUTTON */
+.btn2,.btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:linear-gradient(90deg,#14b8a6,#0f766e);
+    color:white;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    border:none;
 }
 
 /* FOOTER */
 footer{
-    background:#111827;
-    color:white;
-    padding:40px;
+    background:#020617;
+    color:#cbd5f5;
+    padding:60px;
     text-align:center;
+    font-size:18px;
 }
-
 </style>
 </head>
 
@@ -117,118 +143,376 @@ footer{
 
 <!-- NAV -->
 <div class="nav">
-    <h2>Axibator</h2>
-    <div>
-        <a href="#">Programs</a>
-        <a href="#">Builder Nests</a>
-        <a href="#">Partners</a>
-        <a class="cta" href="#">Apply Now</a>
-    </div>
+<h2>Axibator</h2>
+<div>
+<a href="#programs">Programs</a>
+<a href="#skills">Skill </a>
+<a href="#nest">Builder-Nest</a>
+<a href="#partners">Partners</a>
+<a href="#ecosystem">Ecosystem</a>
+<a href="#why">Why Axibator</a>
+<a href="#contact">Contact</a>
+<a class="cta" href="#">Apply Now</a>
+</div>
 </div>
 
 <!-- HERO -->
 <div class="hero">
 <div>
-<h1>Axibator – Where Founders Find <span>Direction</span><br>and the Grit to Build Bold</h1>
-<p>Axibator is more than a program — it’s a launchpad for grassroots and student founders. We help first-time founders from small towns, campuses and communities with clarity, systems and support to start building from day one.</p>
-<a class="btn" href="#">Start Building</a>
+<h1>Where Founders Find <span>Direction</span><br>and the Grit to Build Bold</h1>
+<p>Axibator is more than a program — it’s a launchpad for grassroots and student founders. We help first-time founders from small towns, campuses, and communities build real startups from day one.</p>
+<a class="btn" href="https://www.axibator.com">Start Building</a>
 </div>
 </div>
 
-<!-- WHAT IS -->
-<div class="section">
-<h2>What is Axibator?</h2>
-<p><b>Axibator = Axis (Direction) + Incubator (Nurture)</b></p>
-<p>An execution-first launchpad helping India’s next generation of founders with squads, not hierarchy.</p>
-</div>
+
+<section class="section" id="about">
+  <h2>What is Axibator?</h2>
+
+  <p style="font-size:20px; max-width:900px;">
+    <b>Axibator = Axis (Direction) + Incubator (Nurture)</b>
+  </p>
+
+  <p style="max-width:900px; font-size:18px; color:#475569;">
+    Axibator is an <b>execution-first launchpad</b> built to help India’s next generation
+    of founders move from confusion to clarity — and from raw ideas to real startups.
+    We don’t just teach entrepreneurship. We help founders <b>build, test, and launch</b>
+    in the real world.
+  </p>
+
+  <p style="max-width:900px; font-size:18px; margin-top:25px; color:#475569;">
+    Built for <b>students, first-time founders, and grassroots builders</b>, Axibator provides
+    the systems, mentors, tools, and community needed to ship products, find users,
+    and grow with confidence — not hierarchy.
+  </p>
+
+  <div class="grid" style="margin-top:60px;">
+    <div class="card">
+      <h3>🎯 Direction</h3>
+      <p>We help founders find clarity — what to build, who to serve, and how to grow.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛠 Execution</h3>
+      <p>Real sprints, real users, real feedback. We focus on action, not theory.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤝 Community</h3>
+      <p>Build alongside other hungry founders in squads, not classrooms.</p>
+    </div>
+  </div>
+</section>
+
 
 <!-- CORE PROGRAMS -->
-<div class="section">
+<div id="programs" class="section">
 <h2>⚡ Core Programs</h2>
-<div class="cards">
+<div class="grid">
 
-<div class="program">
-<h3>Ignite Cohort – 4 Weeks</h3>
-<p>Turn raw ideas into tested prototypes for students & first-time founders.</p>
+<div class="card">
+<span class="badge">4 Weeks · Bootcamp</span>
+<h3>🔥 Ignite Cohort</h3>
+<p>Turn raw ideas into tested prototypes.</p>
 <ul>
 <li>Idea validation sprints</li>
 <li>Rapid prototyping</li>
 <li>Customer interviews</li>
 <li>MVP wireframing</li>
 </ul>
+<p><b>Next Cohort:</b> August 2025</p>
+<button class="btn2">Apply Now →</button>
 </div>
 
-<div class="program">
-<h3>Core Incubation – 12 Weeks</h3>
+<div class="card">
+<span class="badge">12 Weeks · Build Journey</span>
+<h3>🚀 Core Incubation Program</h3>
 <p>Go from MVP → first users → public launch.</p>
 <ul>
+<li>MVP to launch pipeline</li>
 <li>Weekly mentor jams</li>
 <li>User acquisition strategy</li>
 <li>Real-time feedback loops</li>
 </ul>
+<p><b>Next Cohort:</b> September 2025</p>
+<button class="btn2">Apply Now →</button>
 </div>
 
-<div class="program">
-<h3>Village Innovation Labs</h3>
-<p>Build solutions for real Bharat.</p>
+<div class="card">
+<span class="badge">4–8 Weeks · Rural Immersion</span>
+<h3>🌱 Village Innovation Labs</h3>
+<p>Live and build in real Bharat.</p>
 <ul>
-<li>Rural immersion</li>
+<li>Rural immersion & discovery</li>
 <li>Local partnerships</li>
 <li>Grassroots innovation</li>
 </ul>
+<p><b>Next Cohort:</b> October 2025</p>
+<button class="btn2">Apply Now →</button>
 </div>
 
 </div>
 </div>
 
-<!-- SKILLS -->
-<div class="section">
-<h2>📚 Skill Development Tracks</h2>
-<div class="cards">
-<div class="card">
-<ul>
-<li>Design & User Experience</li>
-<li>Go-to-Market Strategy</li>
-<li>No-Code Development</li>
-<li>Storytelling & Pitching</li>
-<li>User Research</li>
-<li>Fundraising Basics</li>
-</ul>
-</div>
-<div class="card">
-<h3>Founder Apprenticeship Sprint</h3>
-<ul>
-<li>Startup task execution</li>
-<li>Team collaboration</li>
-<li>Hands-on learning — no theory</li>
-</ul>
-</div>
-</div>
-</div>
+
+<section id="skills" class="section">
+  <h2>📚 Skill Development Tracks</h2>
+
+  <p style="max-width:900px; font-size:18px; color:#475569;">
+    Learn by doing, not watching. Axibator’s skill tracks are designed to help founders
+    build the exact capabilities they need to launch and grow real startups — from
+    product design to customer acquisition and fundraising.
+  </p>
+
+  <div class="grid" style="margin-top:60px;">
+
+    <div class="card">
+      <h3>🧩 Core Builder Skills</h3>
+      <ul>
+        <li>Design & User Experience</li>
+        <li>Go-to-Market Strategy</li>
+        <li>No-Code Development</li>
+        <li>Storytelling & Pitching</li>
+        <li>User Research Methods</li>
+        <li>Fundraising Basics</li>
+      </ul>
+      <p style="margin-top:20px;">
+        These tracks help founders go from idea to MVP with strong product-market fit,
+        clear messaging, and customer-driven growth.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Founder Apprenticeship Sprint</h3>
+      <ul>
+        <li>Startup task execution</li>
+        <li>Team collaboration</li>
+        <li>Hands-on learning — no theoretical BS</li>
+      </ul>
+      <p style="margin-top:20px;">
+        Shadow experienced founders, work inside real startups, and learn what it takes
+        to ship, iterate, and scale in the real world.
+      </p>
+    </div>
+
+  </div>
+
+  <div style="margin-top:50px;">
+    <a href="#" class="btn2">Explore Skill Tracks →</a>
+  </div>
+</section>
+
 
 <!-- BUILDER NEST -->
-<div class="section">
-<h2>🏠 Builder Nest</h2>
-<p>A founder-first home to build bold things — whiteboards, chai, hackathons, demos, shipping streaks, potlucks & podcasts.</p>
-<p><b>Residency Options:</b> Free Pass, Builder-in-Residence, Premium Resident, Rural-Urban Exchange, Nest MicroFund.</p>
-<p><b>Locations 2025:</b> Amaravati, Vizag, Warangal (upcoming), Vijayawada. Interest: Tirupati, Karimnagar, Nellore.</p>
+<div id="nest" class="section">
+<h2>🏠 Builder Nest — Physical Spaces for Founders</h2>
+
+<p><b>Not a WeWork. Not an incubator. Not a rented lab.</b> It’s a home for founders to build bold things — together.</p>
+
+<p>
+The Builder Nest is a founder-first, action-focused house where student and early-stage founders come together to build, ship, and grow — without the pressure of polished pitches. It’s cozy, gritty, and designed for real work: whiteboards, build jams, chai, and community rituals that turn ideas into early MVPs.
+</p>
+
+<h3>What Happens Inside</h3>
+<ul>
+<li>Whiteboard brainstorms, feedback circles, weekend build jams & hackathons</li>
+<li>Coworking sprints, podcast & content studio, maker corners, and founder potlucks</li>
+<li>Signature rituals: 10-min demos, Open/Midnight Mic, Grit Coin, Shipping Streak Board</li>
+</ul>
+
+<h3>Residency & Access</h3>
+<ul>
+<li>Free / Day Pass: Open coworking + community access</li>
+<li>Builder-in-Residence: Nominal monthly rent, private desk, kitchen, event priority</li>
+<li>Premium Resident: Mentorship, podcast studio access, grant & funding support</li>
+<li>Rural–Urban Nest Exchange: Rotate between Village Labs & Nests</li>
+<li>Nest MicroFund: Community-driven MVP grants</li>
+</ul>
+
+<h3>Phase 1 Locations (2025)</h3>
+<p>Amaravati (Alpha), Vizag (Alpha), Warangal (upcoming), Vijayawada (scouting)  
+<br><b>Interest:</b> Tirupati, Karimnagar, Nellore</p>
+
+<p><b>Want to host or visit a Nest?</b> Apply to join or host — Builder Nests are grassroots launchpads for builders who show up.</p>
+
+<button class="btn2">Apply for Builder Nest →</button>
 </div>
 
-<!-- PARTNERS -->
-<div class="section">
-<h2>Our Partners (50+)</h2>
-<p>HubSpot, Atlassian, Apollo, Asana, Intercom, Zendesk, Zoho, Notion, Webflow, GitHub, Miro, Databricks, Retool, Framer, Mixpanel, Posthog, ClickUp, OVHCloud, and more.</p>
-<p><b>Funding Partners:</b> Wolf Ventures + VC & Angel network</p>
-</div>
 
-<!-- ECOSYSTEM -->
-<div class="section">
-<h2>Building the Ecosystem</h2>
-<p>Partnering with Incubators, VCs, Mentors, Startup Founders, Corporates & Government bodies.</p>
+<section id="partners" class="section">
+  <h2>🤝 Our Partners (50+ & Growing)</h2>
+
+  <p style="max-width:900px; font-size:18px; color:#475569;">
+    Axibator founders get access to <b>$200K+ in startup credits, tools, and infrastructure</b>
+    through partnerships with leading global SaaS and cloud providers.
+    These tools help founders move faster, build smarter, and scale without worrying about costs.
+  </p>
+
+  <div class="card" style="margin-top:40px;">
+    <p style="font-size:16px; line-height:1.7;">
+      HubSpot, Atlassian, Apollo, Asana, Intercom, Zendesk, Zoho, Notion, Make.com,
+      Webflow, Mixpanel, JetBrains, GitHub, Miro, Databricks, Retool, Crisp, Exotel,
+      OVHCloud, Brevo, Stytch, Appwrite, Gumlet, DronaHQ, ClickUp, Statsig, Framer,
+      Customer.io, Tally, Posthog, E2E Network — and many more.
+    </p>
+  </div>
+
+  <div class="grid" style="margin-top:60px;">
+    <div class="card">
+      <h3>🛠 Build Faster</h3>
+      <p>
+        Use best-in-class developer tools, design platforms, CRM, and analytics
+        to go from idea to MVP without paying heavy software costs.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📈 Scale Smarter</h3>
+      <p>
+        Access growth, marketing, and customer success platforms that help you
+        acquire users, track performance, and improve retention.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>☁️ Infrastructure Ready</h3>
+      <p>
+        Cloud, hosting, security, and backend tools give your startup the same
+        foundation as well-funded global startups.
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-top:50px;">
+    <p style="font-weight:bold;">
+      Funding Partners:
+    </p>
+    <p>
+      Wolf Ventures and a growing network of VCs & Angel Investors backing Axibator founders.
+    </p>
+  </div>
+
+  <div style="margin-top:40px;">
+    <a href="#" class="btn2">Explore Partner Benefits →</a>
+  </div>
+</section>
+
+
+
+<section id="ecosystem" class="section">
+  <h2>🌍 Building the Ecosystem</h2>
+  <p style="max-width:800px; margin:auto; font-size:18px; color:#475569;">
+    Axibator is not just supporting startups — we are building the <b>entire founder economy</b>.
+    From first-time student founders to global investors, we connect the people, platforms, and
+    partners that help bold ideas become real companies.
+  </p>
+
+  <div class="grid" style="margin-top:60px;">
+
+    <div class="card">
+      <h3>🤝 Incubators & Accelerators</h3>
+      <p>
+        We partner with leading incubation and acceleration programs to give founders
+        access to mentoring, demo days, startup playbooks, and global networks.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💰 VC Firms & Angel Investors</h3>
+      <p>
+        Axibator connects startups to capital partners who believe in early traction,
+        grassroots innovation, and long-term founder growth — not just pitch decks.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Mentors & Industry Experts</h3>
+      <p>
+        Founders get access to real operators, builders, designers, engineers, and
+        business leaders who provide hands-on, execution-focused guidance.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Startup Founders & Alumni</h3>
+      <p>
+        Our alumni and founder network creates a powerful peer-learning ecosystem where
+        builders collaborate, share resources, and grow together.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🏢 Corporates & Government Bodies</h3>
+      <p>
+        We work with enterprises and public institutions to unlock pilot programs,
+        grants, infrastructure, and market access for early-stage startups.
+      </p>
+    </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:60px;">
+    <p style="font-size:18px; font-weight:bold;">
+      Want to collaborate with Axibator and shape India’s founder ecosystem?
+    </p>
+    <a href="#" class="btn2">Partner With Us →</a>
+  </div>
+</section>
+
+
+
+<section id="why" class="section">
+  <h2>⭐ Why Axibator?</h2>
+
+  <p style="font-size:20px; max-width:900px;">
+    Because founders need more than advice — they need a <b>launchpad with clarity,
+    community, and execution muscle</b>.
+  </p>
+
+  <p style="max-width:900px; font-size:18px; color:#475569; margin-top:25px;">
+    At Axibator, we go beyond slides, webinars, and empty motivation.
+    We work side-by-side with founders to help them validate ideas, build MVPs,
+    find real users, and grow into confident startup leaders.
+  </p>
+
+  <div class="grid" style="margin-top:60px;">
+    <div class="card">
+      <h3>⚡ Execution First</h3>
+      <p>We help you ship products, talk to customers, and get traction — not just take notes.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤝 Founder Community</h3>
+      <p>Build alongside other hungry founders who keep you accountable and motivated.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Real Direction</h3>
+      <p>Clear roadmaps, mentor feedback, and real-world validation instead of guesswork.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:60px;">
+    <a href="https://www.axibator.com" target="_blank" class="btn2">
+      Visit axibator.com →
+    </a>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<div id="contact" class="section" style="background:#ecfeff;border-radius:40px;">
+<h2>📞 Contact Axibator</h2>
+<p>Building first-mile infrastructure for grassroots founders.  
+<b>Action-first support for builders who don’t wait for permission to start.</b></p>
+<p><b>Email:</b> connect@axibator.com</p>
+<p><b>Phone:</b> +91 891 234 5678</p>
+<p><b>Address:</b> Asian Sun City, 7th Floor, Kondapur, Hyderabad – India</p>
+<a class="btn" href="mailto:connect@axibator.com">Contact Us →</a>
 </div>
 
 <footer>
-<p>© 2026 Axibator. Built for Founders.</p>
+© 2026 Axibator — Built for Founders
 </footer>
 
 </body>
